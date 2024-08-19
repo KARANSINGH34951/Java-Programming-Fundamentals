@@ -3,6 +3,7 @@
 public class LinearSearch {
   public static void main(String[] args) {
    int arr[]={23,44,2,45,87,9,5,23};
+   
    int key=54;
    int flag =0;
 
