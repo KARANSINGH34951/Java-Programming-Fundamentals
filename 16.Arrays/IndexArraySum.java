@@ -4,8 +4,9 @@ public class IndexArraySum {
     int start,end;
     int currentsum=0;
     int maxsum=0;
-
+    
     int arrfix[]=new int[arr.length];
+    arrfix[0]=arr[0];
     for(int i=1;i<arr.length;i++){
       arrfix[i]=arr[i-1]-arr[i];
     }
@@ -15,7 +16,7 @@ public class IndexArraySum {
       for(int j=0;j<arr.length;j++){
         end=j;
 
-        prefix[end]-pref
+        currentsum=arrfix[end]-arrfix[start-1];
 
       }
     }
