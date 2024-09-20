@@ -66,5 +66,5 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 If you have any questions or feedback, feel free to reach out to me:
 
-- GitHub: [yourusername](https://github.com/KARANSINGH34951)
-- Email: ceitkaransingh2026@example.com
+- GitHub: (https://github.com/KARANSINGH34951)
+- Email: ceitkaransingh2026@gmail.com
