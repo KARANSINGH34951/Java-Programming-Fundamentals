@@ -11,7 +11,7 @@ public class Overloading {
   }
 }
 
-class Calculator{
+class Calculator{ 
   int x =10;
 
    int add(int x, int y){
