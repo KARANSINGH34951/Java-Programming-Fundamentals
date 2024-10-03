@@ -4,8 +4,7 @@ public class Constructor {
     demo1 obj2  = new demo1(34);
     demo2 obj3 = new demo2(23);
     demo2 obj4 = new demo2(23,34);
-    demo2 obj5 = new demo2(78,99);
-    
+    demo2 obj5 = new demo2(78,99); 
   }
 }
 
