@@ -13,7 +13,7 @@ public class Transpose {
   }
 }
 
-class transposeclass {cle
+class transposeclass {
   int transpose[][]=new int[4][4];
   public void transposefunc(int arr[][]){
     
