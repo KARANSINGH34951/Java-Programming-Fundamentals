@@ -2,7 +2,12 @@
 
 public class recursion {
   public static void main(String[] args) {
+    int []arr={1,2,3,4,5,5};
+    System.out.println(issorted(arr,0));
     // numbers obj=new numbers();
+    System.out.println(firstoocurance(arr,5,0));
+    
+    System.out.println(firstoocurance(arr,5,arr.length-1));
     
     // obj.callfunc();
 
@@ -14,8 +19,43 @@ public class recursion {
 
       // System.out.println(res);
 
-      fibo obj4= new fibo();
-      System.out.println(obj4.fibonacci(6));
+      // fibo obj4= new fibo();
+      // System.out.println(obj4.fibonacci(6));
+  }
+
+  public static int firstoocurance(int[] arr,int key,int i){
+    if(i==arr.length-1){
+      return -1;
+    }
+
+    if(arr[i]==key){
+      return i;
+    }
+
+    return firstoocurance(arr, key, i+1);
+  }
+
+  public static int lastoccurance(int[] arr,int key,int i){
+    if(i<0){
+      return -1;
+    }
+
+    if(arr[i]==key){
+      return i;
+    }
+
+    return lastoccurance(arr, key, i-1);
+  }
+
+  public static boolean issorted(int[] arr,int i){
+    if(i==arr.length-1){
+      return true;
+    }
+
+    if(arr[i]>arr[i+1]){
+      return false;
+    }
+    return issorted(arr, i+1);
   }
 }
 
@@ -72,15 +112,17 @@ class factorials{
   }
 }
 
-public static boolean checkPalindrome(int n)
-    {
-        int reverse = 0;
+
+
+// public static boolean checkPalindrome(int n)
+//     {
+//         int reverse = 0;
         
-        int temp = n;
-        while (temp != 0) {
-            reverse = (reverse * 10) + (temp % 10);
-            temp = temp / 10;
-        }
+//         int temp = n;
+//         while (temp != 0) {
+//             reverse = (reverse * 10) + (temp % 10);
+//             temp = temp / 10;
+//         }
         
-        return (reverse == n);
-    }
+//         return (reverse == n);
+//     }
