@@ -1,14 +1,20 @@
 public class duplicate {
   public static void main(String[] args) {
     int arr[]={2,2,3,4,4,5,5,5,6};
-   
-    int j=0;
-    for(int i=1;i<arr.length;i++){
-      if(arr[j]!=arr[i]){
-        arr[j+1]=arr[i];
-        j++;
+
+    int left=0;
+    int right=arr.length-1;
+    int flag=0;
+
+    while(left<=right){
+      if(arr[left]==arr[right]){
+        flag=1;
       }
+      left++;
+      right--;
     }
-    System.out.println(j+1);
-  }
+
+    System.out.println(flag);
+   
+   }
 }
