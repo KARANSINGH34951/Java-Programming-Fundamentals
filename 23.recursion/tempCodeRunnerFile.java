@@ -1,1 +1,1 @@
- // numbers obj=new numbers();
+firstoocurance
